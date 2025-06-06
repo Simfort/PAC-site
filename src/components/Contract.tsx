@@ -11,7 +11,7 @@ export default function Contract() {
     <section className="bg-[#F9F9F9] pt-[98px] flex flex-col items-center  pb-[98px] ">
       <div className="flex max-lg:flex-col max-lg:items-center gap-[175px] max-lg:gap-[30px]">
         <div className=" max-lg:order-2   order-1 max-lg:w-[324px] max-lg:h-[449px] w-[749px] h-[356px] flex flex-col gap-[58px]">
-          <h2 className="font-[Arial] font-[700] max-lg:text-[26px] text-[32px] leading-[37px] uppercase">
+          <h2 className="font-[Arial] font-[700] max-lg:text-[26px] max-lg:w-[323px]  text-[32px] leading-[37px] uppercase">
             Все контракты были завершены в срок. На ряде объектов работы были
             завершены досрочно (до 4 мес).
           </h2>
