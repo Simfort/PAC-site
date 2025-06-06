@@ -1,7 +1,13 @@
+import { useEffect, useState } from "react";
+
 export default function InfoHistory() {
+  const [winWidth, setWinWidth] = useState(0);
+  useEffect(() => {
+    setWinWidth(window.innerWidth);
+  }, []);
   return (
     <section className="flex items-center flex-col pb-[100px] gap-[50px]">
-      <section className="flex gap-[105px] pt-[50px] pb-[50px] max-md:flex-col">
+      <section className="flex gap-[105px] pt-[50px] pb-[50px] max-lg:flex-col">
         <div className="flex w-[269px] flex-col">
           <span className="w-[103px] border-[2px] border-[#2F78AE]"></span>
           <h3 className="text-[32px] text-[#2F78AE] leading-[35px] uppercase font-[500]">
@@ -31,7 +37,7 @@ export default function InfoHistory() {
           </p>
         </div>
       </section>
-      {window.innerWidth >= 768 && (
+      {winWidth >= 1000 && (
         <div className=" p-10 w-[1100px]  bg-[#2F78AE] text-white rounded-[10px]">
           <p className="text-[28px] font-[500] leading-[35px]">
             ГК ПЭК— это предприятие полного цикла строительства. Наш профиль:
