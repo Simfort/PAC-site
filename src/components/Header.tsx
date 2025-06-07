@@ -14,7 +14,7 @@ export default function Header() {
       }}
       className=" w-1/1 max-md:gap-0 max-lg:gap-[20px] max-[1200px]:gap-[20px] gap-[408px] max-md:flex-col  max-md:items-center flex flex-wrap justify-center   min-h-[706px]">
       <section className="max-md:items-center max-md:pt-[33px] pt-[131px] flex flex-col items-start justify-start  ">
-        {winWidth < 768 && (
+        {winWidth < 900 && (
           <p className=" leading-[23px]  text-[18px] font-[400] font-[Arial]">
             office@ooopek.ru
           </p>
@@ -22,25 +22,26 @@ export default function Header() {
         <h2 className="   font-[500] max-md:text-[35px] text-[49px] leading-[67px]  uppercase text-black">
           группа компаний
         </h2>
-        <img src={pac} className=" w-[325px] h-[134px]" />
+        <img
+          src={pac}
+          className=" max-lg:w-[325px] w-[453px] h-[188px] max-lg:h-[134px]"
+        />
 
         <p className=" max-md:text-[16px] max-md:mt-0  font-[400] text-[24px]  mt-[60px]">
           Cтроительство, ремонт и проектирование
         </p>
-        {winWidth >= 450 && (
-          <button
-            style={{
-              backgroundImage:
-                "linear-gradient(51.31deg, #2F78AE 18.04%, #3A91C6 70.46%, #2F78AE 92.31%, #124F78 120.39%)",
-              boxShadow: "0px 7px 10.1px 0px #57575740",
-            }}
-            className=" mt-[42px] font-[700] w-[310px] h-[72px] font-[Arial] text-white flex justify-center items-center text-[14px] ">
-            ОБРАТНАЯ СВЯЗЬ
-          </button>
-        )}
+
+        <button
+          style={{
+            backgroundImage: "linear-gradient()",
+            boxShadow: "0px 7px 10.1px 0px #57575740",
+          }}
+          className=" bg-linear-[51.31deg,#2F78AE_18.04%,#3A91C6_70.46%,#2F78AE_92.31%,#124F78_120.39%] hover:opacity-50 active:opacity-10  transition-all duration-150 mt-[42px] font-[700] w-[310px] h-[72px] font-[Arial] text-white flex justify-center items-center text-[14px] ">
+          ОБРАТНАЯ СВЯЗЬ
+        </button>
       </section>
       <section className="max-md:items-center max-md:pt-[40px] pt-[100px] flex-col">
-        {winWidth >= 788 && (
+        {winWidth >= 901 && (
           <p className="ml-[180px]  text-[18px] font-[400] font-[Arial]">
             office@ooopek.ru
           </p>
