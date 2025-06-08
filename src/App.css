@@ -10,3 +10,19 @@ body {
   min-height: 100vh;
   letter-spacing: 0%;
 }
+
+#modal {
+  position: fixed;
+  min-height: 100vh;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.329);
+  z-index: 1000;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(20px);
+}

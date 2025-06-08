@@ -1,9 +1,12 @@
 import { useEffect, useState } from "react";
 import logo from "../assets/logo.png";
 import pac from "../assets/pac.png";
+import { createPortal } from "react-dom";
+import FormModal from "./FormModal";
 
 export default function Header() {
   const [winWidth, setWinWidth] = useState(0);
+  const [flag, setFlag] = useState(false);
   useEffect(() => {
     setWinWidth(window.innerWidth);
   }, []);
@@ -32,6 +35,7 @@ export default function Header() {
         </p>
 
         <button
+          onClick={() => setFlag(true)}
           style={{
             backgroundImage: "linear-gradient()",
             boxShadow: "0px 7px 10.1px 0px #57575740",
@@ -39,6 +43,7 @@ export default function Header() {
           className=" bg-linear-[51.31deg,#2F78AE_18.04%,#3A91C6_70.46%,#2F78AE_92.31%,#124F78_120.39%] hover:opacity-50 active:opacity-10  transition-all duration-150 mt-[42px] font-[700] w-[310px] h-[72px] font-[Arial] text-white flex justify-center items-center text-[14px] ">
           ОБРАТНАЯ СВЯЗЬ
         </button>
+        {flag && createPortal(<FormModal setModal={setFlag} />, document.body)}
       </section>
       <section className="max-md:items-center max-md:pt-[40px] pt-[100px] flex-col">
         {winWidth >= 901 && (
