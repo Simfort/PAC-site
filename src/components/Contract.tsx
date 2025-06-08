@@ -44,7 +44,7 @@ export default function Contract() {
       </div>
       <div className="pt-[60px] ">
         <div className="flex justify-center items-center p-[30px] max-[1200px]:w-[692px] w-[1200px] bg-white max-sm:w-[324px] h-[104px] max-sm:h-[214px]">
-          <h5 className="max-sm:h-[274px] h-[44px] w-[750px] font-[700] font-[Arial] text-[18px] leading-[22px]  ">
+          <h5 className="max-sm:h-[159px] h-[44px] w-[750px] font-[700] font-[Arial] text-[18px] leading-[22px]  ">
             Группа компаний ПЭК имеет представительства в нескольких регионах
             РФ. А именно: Пермский край, Республика Крым, Севастополь и
             Запорожская область.
