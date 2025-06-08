@@ -5,7 +5,7 @@ import { useState } from "react";
 export default function ObjectItem({ object }: { object: ItemObject }) {
   const [mouseFlag, setMouseFlag] = useState(false);
   return (
-    <div className="w-[395px] max-sm:[w-350px] max-sm:h-[350px] h-[395px] ">
+    <div className="w-[395px] max-sm:w-[300px] max-sm:h-[300px] h-[395px] ">
       <div
         onMouseEnter={() => setMouseFlag(true)}
         onMouseLeave={() => setMouseFlag(false)}
@@ -15,8 +15,8 @@ export default function ObjectItem({ object }: { object: ItemObject }) {
           background: `url(${object.image})`,
           backgroundRepeat: "no-repeat",
         }}>
-        <div className="w-[349px]    h-[348px]  flex flex-col gap-[21px]">
-          <div className="w-[349px]  h-[290px] flex gap-[185px] flex-col">
+        <div className="  flex flex-col gap-[21px]">
+          <div className="w-[395px] h-[395px] max-sm:w-[250px]  max-sm:h-[240px] flex gap-[185px] max-sm:gap-[120px] flex-col">
             <p className="text-[14px] h-[36px] text-white leading-[18px] font-[400] font-[Arial]">
               {object.title}
             </p>
@@ -29,10 +29,10 @@ export default function ObjectItem({ object }: { object: ItemObject }) {
           </button>
         </div>
         <div
-          className={`w-[395px] h-[395px] ${
+          className={`w-[395px] h-[395px] max-sm:w-[300px] max-sm:h-1/1   ${
             mouseFlag ? " opacity-100 shadow-2xl " : "opacity-0 "
-          } transition-[opacity] duration-700 p-[30px] bg-white absolute top-0 bottom-0 right-0 left-0 pt-[27px] pr-[22px] pb-[27px] pl-[22px]  flex flex-col gap-[10px]     `}>
-          <div className="flex flex-col gap-[20px] ">
+          } transition-[opacity] duration-700 p-[30px] bg-white absolute top-0 bottom-0 right-0 left-0 pt-[27px] pr-[22px] pb-[27px] pl-[22px] max-sm:p-[50px]  flex flex-col gap-[10px] max-sm:pt-[5px]  `}>
+          <div className="flex flex-col gap-[20px] max-sm:gap-[2px]  max-sm:w-1/1  ">
             {object.contracts &&
               object.contracts.map((val, i) => (
                 <div
@@ -44,8 +44,8 @@ export default function ObjectItem({ object }: { object: ItemObject }) {
                 </div>
               ))}
             {object.author && (
-              <div className="pb-[15px] last:border-none border-b-[1px] border-[#2F78AE] w-[345px]">
-                <h2 className=" font-[700] text-[#3A91C6] font-[Arial] text-[20px] leading-[26px] uppercase">
+              <div className="pb-[15px] last:border-none border-b-[1px] border-[#2F78AE] max-sm:w-1/1 w-[345px]">
+                <h2 className=" font-[700] text-[#3A91C6] font-[Arial] text-[20px] leading-[26px] uppercase max-sm:text-[16px]">
                   Заказчик
                 </h2>
                 <p className="font-[400] font-[Arial] text-[16px] leading-[20px] capitalize">
@@ -55,8 +55,8 @@ export default function ObjectItem({ object }: { object: ItemObject }) {
             )}
 
             {object.price && (
-              <div className="pb-[15px] last:border-none border-b-[1px] border-[#2F78AE] w-[345px]">
-                <h2 className=" font-[700] text-[#3A91C6] font-[Arial] text-[20px] leading-[26px] uppercase">
+              <div className="pb-[15px] max-sm:w-1/1 last:border-none border-b-[1px] border-[#2F78AE] w-[345px] ">
+                <h2 className="max-sm:text-[16px] font-[700] text-[#3A91C6] font-[Arial] text-[20px] leading-[26px] uppercase">
                   Стоимость капитального ремонта
                 </h2>
                 <p className="font-[400] font-[Arial] text-[16px] leading-[20px] ">
@@ -66,8 +66,8 @@ export default function ObjectItem({ object }: { object: ItemObject }) {
             )}
 
             {object.status && (
-              <div className="pb-[15px] last:border-none border-b-[1px] border-[#2F78AE] w-[345px]">
-                <h2 className=" font-[700] text-[#3A91C6] font-[Arial] text-[20px] leading-[20px] uppercase">
+              <div className="pb-[15px] max-sm:w-1/1 last:border-none border-b-[1px] border-[#2F78AE] w-[345px] ">
+                <h2 className="max-sm:text-[16px] font-[700] text-[#3A91C6] font-[Arial] text-[20px] leading-[20px] uppercase">
                   Статус контракта
                 </h2>
                 <p className="font-[400] font-[Arial] text-[16px] leading-[20px] ">
@@ -76,8 +76,8 @@ export default function ObjectItem({ object }: { object: ItemObject }) {
               </div>
             )}
             {object.timeWork && (
-              <div className="pb-[15px] last:border-none border-b-[1px] border-[#2F78AE] w-[345px]">
-                <h2 className=" font-[700] text-[#3A91C6] font-[Arial] text-[20px] leading-[20px] uppercase">
+              <div className="pb-[15px] max-sm:w-1/1 last:border-none border-b-[1px] border-[#2F78AE] w-[345px] ">
+                <h2 className="max-sm:text-[16px] font-[700] text-[#3A91C6] font-[Arial] text-[20px] leading-[20px] uppercase">
                   СРОК ПРОИЗВОДСТВА РАБОТ
                 </h2>
                 <p className="font-[400] font-[Arial] text-[16px] leading-[20px] ">
@@ -87,8 +87,8 @@ export default function ObjectItem({ object }: { object: ItemObject }) {
             )}
 
             {object.commonPrice && (
-              <div className="pb-[15px] last:border-none  border-b-[1px] border-[#2F78AE] w-[345px]">
-                <h2 className="w-[345px] font-[700] text-[#3A91C6] font-[Arial] text-[20px] leading-[20px] uppercase">
+              <div className="pb-[15px] last:border-none max-sm:w-1/1 border-b-[1px] border-[#2F78AE] w-[345px]">
+                <h2 className=" max-sm:text-[16px] font-[700] text-[#3A91C6] font-[Arial] text-[20px] leading-[20px] uppercase">
                   Общая сумма исполненных контрактов в Симферопольской ГКБ№ 7
                 </h2>
                 <p className="font-[400] font-[Arial] text-[16px] leading-[20px] ">

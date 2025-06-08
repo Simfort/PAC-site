@@ -12,7 +12,7 @@ const arrPuncts = [
 
 export default function License() {
   return (
-    <section className="max-sm:h-[1891px] max-[1200px]:h-[1173px] h-[710px] bg-white flex  items-center flex-col pt-[120px] pb-[120px] gap-[70px]">
+    <section className="max-sm:h-[1991px] max-[1200px]:h-[1173px] h-[710px] bg-white flex  items-center flex-col pt-[120px] pb-[120px] gap-[70px]  ">
       <div className="flex flex-col max-[1200px]:items-center gap-[70px]">
         <div className="flex flex-col  max-lg:text-center">
           <h2 className="font-[500] text-[40px]  ">СРО И ЛИЦЕНЗИИ</h2>
@@ -47,7 +47,7 @@ export default function License() {
             </div>
           </div>
           <div className="flex-col flex  w-[264px] h-[402px]">
-            <ul className="flex flex-col gap-[26px] w-[264px]  max-lg:w-[324px] h-[402px]">
+            <ul className="flex flex-col gap-[26px] w-[264px] max-sm:w-1/1  max-lg:w-[324px] h-[402px]">
               <p className="font-[500] text-[32px]  h-[22px] leading-5">
                 А ТАКЖЕ
               </p>
@@ -65,7 +65,7 @@ export default function License() {
                   </p>
                 </li>
               ))}
-              <p className="italic font-[Arial] text-[14px] max-lg:w-[324px] max-lg:h-[36px] w-[264px] h-[54px] leading-[18px] font-[400] text-[#2F78AE]">
+              <p className=" max-sm:w-1/1 italic font-[Arial] text-[14px] max-lg:w-[324px] max-lg:h-[36px] w-[264px] h-[54px] leading-[18px] font-[400] text-[#2F78AE]">
                 Допуски включают в себя особо опасные, технически сложные и
                 уникальные объекты.
               </p>

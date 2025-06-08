@@ -10,7 +10,7 @@ export default function Sponsors() {
         <h2 className="font-[500]  max-lg:w-1/1 text-center  max-sm:h-[75px] max-[1200px]:w-1/1  max-md:w-1/1  max-md:h-[28px] max-md:text-[40px] h-[36px] leading-[37px] uppercase text-[52px] ">
           Наши заказчики
         </h2>
-        <p className="w-[413px] max-sm:text-left text-center  max-sm:h-[104px] max-md:h-[130px] max-md:text-[18px]  font-[Arial] font-[500] text-[20px] leading-[26px]  ">
+        <p className="w-[413px]  text-center  max-sm:h-[104px] max-md:h-[130px] max-md:text-[18px]  font-[Arial] font-[500] text-[20px] leading-[26px] max-sm:w-1/1   ">
           Нашими заказчиками выступают следующие учреждения и предприятия
           Пермкого края и Российской федерации:
         </p>

@@ -5,7 +5,7 @@ import { objects } from "./objects";
 export default function Objects() {
   const [flag, setFlag] = useState(false);
   return (
-    <section className="pt-[120px] max-sm:pt-[160px]  pb-[120px] flex flex-col gap-[70px] items-center  ">
+    <section className="pt-[120px] max-sm:pt-[160px] max-sm:w-1/1  pb-[120px] flex flex-col gap-[70px] items-center  ">
       <div>
         <h2 className="font-[700] mt-[100px] max-sm:text-center     text-[52px] leading-[96px] uppercase self-start ">
           объекты
@@ -15,7 +15,7 @@ export default function Objects() {
             flag
               ? ` grid-rows-[395px_395px_395px_395px_395px]`
               : `min-h-[1603px] grid-rows-4`
-          }  max-sm:gap-[50px]  gap-[5px] grid transition-all duration-300`}>
+          }  max-sm:gap-[60px]  gap-[5px] grid transition-all duration-300`}>
           {objects.slice(0, 12).map((val, i) => (
             <ObjectItem key={i} object={val} />
           ))}
