@@ -29,9 +29,9 @@ export default function ObjectItem({ object }: { object: ItemObject }) {
           </button>
         </div>
         <div
-          className={`w-[395px] h-[395px] max-sm:w-[300px] max-sm:h-1/1   ${
+          className={`w-[395px] h-[395px] max-sm:w-[300px] max-sm:min-h-1/1   ${
             mouseFlag ? " opacity-100 shadow-2xl " : "opacity-0 "
-          } transition-[opacity] duration-700 p-[30px] bg-white absolute top-0 bottom-0 right-0 left-0 pt-[27px] pr-[22px] pb-[27px] pl-[22px] max-sm:p-[50px]  flex flex-col gap-[10px] max-sm:pt-[5px]  `}>
+          } transition-[opacity] duration-700 p-[30px] bg-white absolute top-0 bottom-0 right-0 left-0 pt-[27px] pr-[22px] pb-[27px] pl-[22px] max-sm:p-[50px] max-sm:gap-[5px] max-sm:pt-0 flex flex-col gap-[10px]  `}>
           <div className="flex flex-col gap-[20px] max-sm:gap-[2px]  max-sm:w-1/1  ">
             {object.contracts &&
               object.contracts.map((val, i) => (
@@ -88,7 +88,7 @@ export default function ObjectItem({ object }: { object: ItemObject }) {
 
             {object.commonPrice && (
               <div className="pb-[15px] last:border-none max-sm:w-1/1 border-b-[1px] border-[#2F78AE] w-[345px]">
-                <h2 className=" max-sm:text-[16px] font-[700] text-[#3A91C6] font-[Arial] text-[20px] leading-[20px] uppercase">
+                <h2 className=" max-sm:text-[13px]  font-[700] text-[#3A91C6] font-[Arial] text-[20px] leading-[20px] uppercase">
                   Общая сумма исполненных контрактов в Симферопольской ГКБ№ 7
                 </h2>
                 <p className="font-[400] font-[Arial] text-[16px] leading-[20px] ">
