@@ -5,17 +5,17 @@ import logos4 from "../assets/logos4.png";
 
 export default function Sponsors() {
   return (
-    <section className="flex  flex-col max-sm:w-1/1 max-sm:h-[1274px] max-sm:items-center max-md:w-[584px] max-md:h-[1209px] max-[1200px]:w-[750px] max-[1200px]:h-[968px] items-center max-sm:pt-[20px] pt-[120px] pb-[120px] justify-start gap-[70px]">
-      <div className="flex items-center  max-sm:items-center flex-wrap  max-sm:h-[218px] max-sm:flex-col max-[1200px]:gap-[10px] gap-[345px] h-[78px]">
+    <section className="flex  flex-col max-sm:w-1/1 max-sm:h-[1274px] max-sm:items-center max-md:w-[584px] max-md:h-[1209px]  max-[1200px]:w-1/1 max-[1200px]:h-[968px] items-center max-sm:pt-[20px] pt-[120px] pb-[120px] justify-start gap-[70px]">
+      <div className="flex  items-center  max-md:flex-col  max-sm:h-[218px] max-sm:flex-col max-[1200px]:gap-[10px] gap-[345px] h-[78px]">
         <h2 className="font-[500]  max-lg:w-1/1 text-center  max-sm:h-[75px] max-[1200px]:w-1/1  max-md:w-1/1  max-md:h-[28px] max-md:text-[40px] h-[36px] leading-[37px] uppercase text-[52px] ">
           Наши заказчики
         </h2>
-        <p className="w-[413px] max-sm:text-left text-center max-lg:w-1/1 max-sm:h-[104px] max-md:h-[130px] max-md:text-[18px]  font-[Arial] font-[500] text-[20px] leading-[26px]  ">
+        <p className="w-[413px] max-sm:text-left text-center  max-sm:h-[104px] max-md:h-[130px] max-md:text-[18px]  font-[Arial] font-[500] text-[20px] leading-[26px]  ">
           Нашими заказчиками выступают следующие учреждения и предприятия
           Пермкого края и Российской федерации:
         </p>
       </div>
-      <div>
+      <div className="w-1/1 flex justify-center">
         {window.innerWidth >= 1200 && (
           <img
             className="h-[422px] w-[962px]"

@@ -2,68 +2,74 @@ import logo from "../assets/logo.png";
 
 export default function Footer() {
   return (
-    <footer className="w-1/1 bg-black text-white flex flex-col pt-[20px] items-center ">
-      <div>
-        <div className="flex gap-[175px] max-lg:justify-center">
-          <ul>
-            <h3 className="text-[12px] leading-[26px] font-[700] text-right font-[Arial]">
+    <footer className="bg-black   text-white pt-[63px] gap-[100px] flex flex-col items-center pb-[63px]">
+      <div
+        id="menu"
+        className="flex gap-[191px] 1200px max-[1200px]:gap-[103px] 1024px max-lg:flex-col max-lg:max-w-[696px] 640px max-sm:w-[325px] max-sm:gap-[65px]">
+        <div
+          id="menu2"
+          className="flex gap-[191px] 1200px max-[1200px]:gap-[103px] 640px max-sm:gap-[65px]">
+          <div id="adress" className="flex flex-col gap-[18px] ">
+            <h3 className="font-[Arial] font-[700] text-[14px] text-right leading-[26px]">
               Адрес
             </h3>
-            <li className="text-[12px] leading-[26px] font-[400] font-[Arial] text-right">
+            <p className="font-[Arial] font-[400] text-[14px] text-right leading-[26px]">
               Симферополь, ул Гагарина 20а
-            </li>
-            <li className="text-[12px] leading-[26px] font-[400] font-[Arial] text-right">
+            </p>
+            <p className="font-[Arial] font-[400] text-[14px] text-right leading-[26px]">
               Пермь, Горького 9
-            </li>
-            <li className="text-[12px] leading-[26px] font-[400] font-[Arial] text-right">
+            </p>
+            <p className="font-[Arial] font-[400] text-[14px] text-right leading-[26px]">
               Пермь, Кировоградская 12
-            </li>
-          </ul>
-          <div className="max-[1200px]:flex-col flex gap-[175px]">
-            <div>
-              <h3 className="text-[12px] leading-[26px] font-[700] text-right font-[Arial]">
+            </p>
+          </div>
+          <div
+            id="pochataAndContacts"
+            className="flex gap-[191px] 1200px max-[1200px]:gap-[103px] 630px mas-sm:flex-col max-sm:gap-[24px]">
+            <div id="Contacts">
+              <h3 className="font-[Arial] font-[700] text-[14px] text-right leading-[26px]">
                 Контактное лицо
               </h3>
-              <p className="text-[12px] leading-[26px] font-[400] font-[Arial] text-right">
+              <p className="font-[Arial] font-[400] text-[14px] text-right leading-[26px]">
                 +7 (988) 187-82-71
               </p>
             </div>
-            <div>
-              <h3 className="text-[12px] leading-[26px] font-[700] text-right font-[Arial]">
+            <div id="pochta">
+              <h3 className="font-[Arial] font-[700] text-[14px] text-right leading-[26px]">
                 Почта
               </h3>
-              <p className="text-[12px] leading-[26px] font-[400] font-[Arial] text-right">
+              <p className="font-[Arial] font-[400] text-[14px] text-right leading-[26px]">
                 office@ooopek.ru
               </p>
             </div>
           </div>
         </div>
-        <div className="max-[1200px]:flex max-[1200px]:flex-col   max-[1200px]:w-1/1">
-          <h3 className="text-[12px] leading-[26px] font-[700] max-[1200px]:text-left max-sm:text-right text-right font-[Arial]">
+        <div className=" 1024px max-lg:self-start max-lg:max-w-[206px] 630px max-sm:self-end">
+          <h3 className="font-[Arial] font-[700] text-[14px] text-right leading-[26px]">
             Юридическая информация
           </h3>
-          <p className="text-[12px] leading-[26px] font-[400] font-[Arial] max-[1200px]:text-left max-sm:text-right text-right">
+          <p className="font-[Arial] font-[400] text-[14px] text-right leading-[26px]">
             ИНН 5904252716
           </p>
         </div>
-        <div className="flex max-sm:flex-col max-sm:gap-0 max-[1200px]:gap-[200px] gap-[400px] items-center ">
-          <div className="order-1 max-sm:order-2">
-            <a
-              className="text-[12px] leading-[26px] font-[400] font-[Arial] text-right text-[#2F78AE]"
-              href="#">
-              Условия использования сайта
-            </a>
-            <p className="text-[12px] leading-[26px] font-[400] font-[Arial] text-right">
-              Копирование материалов сайта в коммерческих целях запрещено и
-              преследуется по закону РФ.
-            </p>
-          </div>
-          <img
-            className="order-2 max-sm:order-1 w-[62px] h-[71px]"
-            src={logo}
-            alt="PAC logo"
-          />
+      </div>
+      <div
+        id="info"
+        className="w-[1200px] flex items-center justify-between 1200px max-[1200px]:w-[960px] 1024px max-lg:w-[694px] 1024px max-lg:gap-[348px] 630px max-sm:flex-col 630px max-sm:gap-0">
+        <div
+          id="rules"
+          className="flex flex-col items-start 1024px max-lg:w-[283px] 630px max-sm:w-[325px] ">
+          <a
+            className="font-[Arial] text-[#2F78AE] font-[400] text-[14px]  leading-[26px]"
+            href="#">
+            Условия использования сайта
+          </a>
+          <p className="font-[Arial]  font-[400] text-[14px]  leading-[26px]">
+            Копирование материалов сайта в коммерческих целях запрещено и
+            преследуется по закону РФ.
+          </p>
         </div>
+        <img className="w-[62px] h-[71px]" src={logo} alt="Logo" />
       </div>
     </footer>
   );
